@@ -406,22 +406,6 @@ class Game(QWidget):
         self.press_update = (-1, -1)
 
     def start(self):
-        height = self.size().height() - self.height_button
-        width = self.size().width()
-        step = self.gridstep
-        gheight = height // step
-        gwidth = width // step
-        f = open("1.txt", 'w')
-        for j in range(gheight):
-            for i in range(gwidth):
-                f.write(str(self.grid[j, i]))
-                f.write(" ")
-                if self.grid[j, i]:
-                    f.write(" ")
-            f.write("\n")
-        f.close()
-        print("ok")
-
         self.is_start = True
         self.go()
 
