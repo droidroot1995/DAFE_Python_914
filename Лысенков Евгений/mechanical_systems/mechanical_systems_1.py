@@ -59,7 +59,7 @@ ax2 = axes[1]
 gen = generator(v0, y0, a, t0, dt)
 
 def animate(i):
-    ax1, ax2, gen
+    global ax1, ax2, gen
     ax1.clear()
     ax1.set_xlim(0, 4)
     ax1.set_ylim(0, y0+1)

@@ -80,7 +80,7 @@ ax2 = axes[1]
 gen = generator(v0, x0, y0, a, alpha, t0, dt)
 
 def animate(i):
-    ax1, ax2, gen
+    global ax1, ax2, gen
     ax1.clear()
     all = next(gen)
     ax1.set_xlim(100*(all[1][-1]//100), 100*(all[1][-1]//100 + 1))
